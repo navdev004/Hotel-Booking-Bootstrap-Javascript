@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.main-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 25px;
+    border-radius: 20px;
+    line-height: 15px;
+    display: inline-block;
+    transition:  0.5s ease;
+
+}
+.main-btn:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,174,1) 35%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    border: none;
+}
+
+.header-section .navbar{
+    padding: 14px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header-section .navbar .navbar-toggler{
+    border: 0;
+    outline: none;
+}
+.header-section .navbar .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.header-section .nav-item .nav-link{
+   font-size: 1rem;
+   font-weight: 500;
+   display: inline-block;
+}
+.header-section .nav-item .nav-link:hover{
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,174,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+.header-section .navbar.header-scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255,255,255,.85);
+    /* animation: 500ms ease-in-out 0s normal none 1 running fadeInDown; */
+
+}
+
+
+
+
+@keyframes fadeInDown{
+    0%{
+        top: -30%;
+    }
+    50%{
+        top: -15%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+
+
+/*************************** banner ******************************************************/
+.banner img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.banner .carousel-caption{
+    margin-bottom: 290px;
+
+   
+}
+.banner .carousel-caption h5{
+    font-size: 3rem;
+}
+
+.booking-area{
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: -4rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border-radius: 10px;
+
+}
+.booking-area .form-control,
+.booking-area .form-select{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.booking-area .form-control:focus,
+.booking-area .form-select:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* about */
+#about{
+    padding-top: 16px;
+}
+#about img{
+    width: 500px;
+    height: 500px;
+}
+
+
+/* room */
+
+.room-items{
+    position: relative;
+
+}
+.room-items img{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+.room-item-content{
+   position: absolute;
+   z-index: 1;
+   top: 20%;
+   left: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* padding: 0px 90px; */
+   justify-content: center;
+   text-align: center;
+   color: black;
+   padding: 15px;
+   background-color: rgba(255,255,255,.85);
+   border-radius: 10px;
+   display: none;
+   width: 97%;
+   height: 60%;
+    
+}
+.room-items:hover .room-item-content{
+    display: block;
+
+}
+
+.service-image{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+
+}
+.service-menu-area{
+    height: 450px;
+}
+.service-menu-area a{
+    color: gray;
+    font-size: 15px;
+}
+#team img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: none;
+}
+#team .card,#gallery .card{
+    border: none;
+    transition: all 0.3s;
+}
+#team .card:hover{
+    transform: scale(1.1);
+}
+#gallery img{
+    width: 85%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#gallery button{
+    background-color: transparent;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+   
+    color: black;
+    border: 1px solid gray;
+}
+footer{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    
+}
+footer a{
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+footer h5{
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+footer ul li{
+    margin-bottom: 0.5rem;
+}
+footer .social-network a{
+   font-size: 2rem;
+   margin: 0.5rem;
+   
+}
+footer .social-network a:hover{
+    color: #504d4d;
+}
+footer .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid gray;
+}
+@media (max-width:1200px){
+    .header-section .navbar .navbar-nav{
+        align-items: center;
+    }
+    .room-item-content{
+        height: 70%;
+    }
+  
+}
+
+
+
+@media (max-width:800px){ 
+    .header-section .nav-item .nav-link{
+        font-size: 14px;
+    }
+    .banner img{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
+    #gallery img{
+        width: 100%;
+       
+    }
+    .room-item-content{
+        width: 98%;
+    }
+   
+  
+}
+
+@media (max-width:800px){
+    .room-item-content{
+        
+        width: 97%;
+  }
+}
